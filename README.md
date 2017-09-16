@@ -1,7 +1,7 @@
 Hostile Breakout (game)
 ====
 
-A variant of the classic arcade game Breakout.
+A variant of the classic arcade game Breakout built using JavaFX.
 
 Author: Ben Schwennesen
 
