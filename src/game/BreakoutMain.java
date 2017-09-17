@@ -133,7 +133,7 @@ public class BreakoutMain extends Application {
 	private void displayRules() {
 		String rules = null;
 		try {
-			rules = getFileAsString("game-rules.txt");
+			rules = getFileAsString("resources/game-rules.txt");
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -147,7 +147,7 @@ public class BreakoutMain extends Application {
 	private void displayCheatCodes() {
 		String cheats = null;
 		try {
-			cheats = getFileAsString("cheat-codes.txt");
+			cheats = getFileAsString("resources/cheat-codes.txt");
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -161,7 +161,7 @@ public class BreakoutMain extends Application {
 	private void displayStory() {
 		String story = null;
 		try {
-			story = getFileAsString("story-blurb.txt");
+			story = getFileAsString("resources/story-blurb.txt");
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -194,7 +194,8 @@ public class BreakoutMain extends Application {
 	 * @throws IOException
 	 */
 	private String getFileAsString(String fileName) throws IOException {
-		InputStream rulesAsInputStream = getClass().getResourceAsStream(fileName);
+		System.out.println(getClass().getResource("/").getPath());
+		InputStream rulesAsInputStream = getClass().getClassLoader().getResourceAsStream(fileName);
 		String fileAsString = readStream(rulesAsInputStream);
 		rulesAsInputStream.close();
 		return fileAsString;
