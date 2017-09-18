@@ -194,7 +194,6 @@ public class BreakoutMain extends Application {
 	 * @throws IOException
 	 */
 	private String getFileAsString(String fileName) throws IOException {
-		System.out.println(getClass().getResource("/").getPath());
 		InputStream rulesAsInputStream = getClass().getClassLoader().getResourceAsStream(fileName);
 		String fileAsString = readStream(rulesAsInputStream);
 		rulesAsInputStream.close();
