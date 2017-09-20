@@ -1,24 +1,9 @@
-/actors/
-/game/
-/resources/
-<<<<<<< HEAD
-/Ball.class
-/Bullet.class
-/Character.class
-/Paddle.class
-/Sprite.class
-/Block.class
-/BreakoutMain.class
-/GameEnvironment.class
-/HostileBreakout.class
-/LevelFactory.class
-/MenuItem.class
-/PowerUp.class
-/PropertiesGetter.class
-/SpriteManager.class
-/breakout.properties
-/cheat-codes.txt
-/game-rules.txt
-/story-blurb.txt
-=======
->>>>>>> 8ebb79008a43707eab904cb6da5dd8615c755783
+/auxiliary-ball.png
+/ball.png
+/bullet.png
+/city-background.png
+/dark-background.png
+/grass-background.png
+/human.png
+/ice-background.png
+/rock-background.png

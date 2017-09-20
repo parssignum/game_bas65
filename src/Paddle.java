@@ -5,7 +5,7 @@ import javafx.scene.image.Image;
 public class Paddle extends Character {
 
 	/** the image representing the paddle */
-	private final Image PADDLE_BASE_IMAGE = new Image(getClass().getClassLoader().getResourceAsStream("images/human.png"));
+	private final Image PADDLE_BASE_IMAGE = new Image(getClass().getClassLoader().getResourceAsStream("human.png"));
 	/** default horizontal position */
 	private double defaultX;
 	/** default vertical position */
@@ -45,6 +45,7 @@ public class Paddle extends Character {
 	 * @param sceneHeight
 	 *            - boundary on the top
 	 */
+	@Override
 	public void bounce() {
 		int screenWidth = PropertiesGetter.getScreenWidth();
 		if (getImage().getX() < 0 || getImage().getX() > screenWidth - getImage().getBoundsInLocal().getWidth()) {
@@ -58,6 +59,7 @@ public class Paddle extends Character {
 	 * @param sprite
 	 *            - the sprite we might be taking damage from, depending on its type
 	 */
+	@Override
 	public void takeDamageFrom(Sprite sprite) {
 		if (sprite instanceof Bullet) {
 			takeDamage(sprite.getDamageDealt());

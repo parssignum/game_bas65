@@ -253,6 +253,7 @@ public class HostileBreakout extends GameEnvironment {
 	/**
 	 * Check for collisions and have the sprite factory handle them where necessary
 	 */
+	@Override
 	public void processCollisions() {
 		if (ball.collidesWith(paddle)) {
 			ball.setVelocity(new Point2D(0, 0));
@@ -323,7 +324,7 @@ public class HostileBreakout extends GameEnvironment {
 	/** activate the multiply power-up */
 	private void activateMultiply() {
 		Random random = new Random();
-		Image auxiliaryBallImage = new Image(getClass().getClassLoader().getResourceAsStream("images/auxiliary-ball.png"));
+		Image auxiliaryBallImage = new Image(getClass().getClassLoader().getResourceAsStream("auxiliary-ball.png"));
 		for (int i = 0; i < PropertiesGetter.getMultiplyCount(); i++) {
 			// have the new balls enter from the top left with random velocity vectors
 			Ball newAuxiliaryBall = new Ball(auxiliaryBallImage, 0, 0);

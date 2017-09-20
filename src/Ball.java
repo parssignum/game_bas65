@@ -59,6 +59,7 @@ public class Ball extends Sprite {
 	 * Bounces the ball off all walls expect the bottom, except when in god mode. In
 	 * god mode, bounces ball off all walls.
 	 */
+	@Override
 	public void bounce() {
 		if (getImage().getX() < 0 || getImage().getX() > SCENE_WIDTH - getWidth()) {
 			setVelocity(new Point2D(-getVelocity().getX(), getVelocity().getY()));

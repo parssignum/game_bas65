@@ -1,4 +1,5 @@
 
+import javafx.animation.Animation;
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
 import javafx.util.Duration;
@@ -37,7 +38,7 @@ public abstract class GameEnvironment {
 		Duration singleFrame = Duration.millis(MILLISECOND_DELAY);
 		KeyFrame frame = new KeyFrame(singleFrame, e -> step(SECOND_DELAY));
 		gameLoop = new Timeline();
-		gameLoop.setCycleCount(Timeline.INDEFINITE);
+		gameLoop.setCycleCount(Animation.INDEFINITE);
 		gameLoop.getKeyFrames().add(frame);
 	}
 

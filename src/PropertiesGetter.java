@@ -338,7 +338,7 @@ public final class PropertiesGetter {
 
 	/** @return a string representing the image file for a level's background */
 	public static String getLevelBackgroundImage(int level) {
-		return "resources/" + GAME_CONFIG.getProperty("background-level-" + String.valueOf(level));
+		return GAME_CONFIG.getProperty("background-level-" + String.valueOf(level));
 	}
 
 	/** @return a Color used to fill a particular type of block or power-up */
