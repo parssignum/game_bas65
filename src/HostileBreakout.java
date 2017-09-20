@@ -1,14 +1,9 @@
-package game;
+
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Random;
 import java.util.Set;
 
-import actors.Ball;
-import actors.Bullet;
-import actors.Character;
-import actors.Paddle;
-import actors.Sprite;
 import javafx.animation.Animation.Status;
 import javafx.geometry.Point2D;
 import javafx.geometry.Pos;
@@ -328,7 +323,7 @@ public class HostileBreakout extends GameEnvironment {
 	/** activate the multiply power-up */
 	private void activateMultiply() {
 		Random random = new Random();
-		Image auxiliaryBallImage = new Image(getClass().getClassLoader().getResourceAsStream("resources/auxiliary-ball.png"));
+		Image auxiliaryBallImage = new Image(getClass().getClassLoader().getResourceAsStream("images/auxiliary-ball.png"));
 		for (int i = 0; i < PropertiesGetter.getMultiplyCount(); i++) {
 			// have the new balls enter from the top left with random velocity vectors
 			Ball newAuxiliaryBall = new Ball(auxiliaryBallImage, 0, 0);

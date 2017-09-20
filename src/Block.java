@@ -1,6 +1,4 @@
-package game;
-import actors.Bullet;
-import actors.Sprite;
+
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Rectangle;
 

@@ -1,5 +1,4 @@
-package actors;
-import game.Block;
+
 import javafx.geometry.Bounds;
 import javafx.geometry.Point2D;
 import javafx.scene.image.Image;

@@ -1,8 +1,6 @@
-package game;
+
 import java.util.HashSet;
 import java.util.Set;
-
-import actors.Sprite;
 
 public class SpriteManager {
 	

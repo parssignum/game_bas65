@@ -1,4 +1,4 @@
-package actors;
+
 public abstract class Character extends Sprite {
 
 	/**

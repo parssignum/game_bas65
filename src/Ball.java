@@ -1,12 +1,11 @@
-package actors;
-import game.PropertiesGetter;
+
 import javafx.geometry.Point2D;
 import javafx.scene.image.Image;
 
 public class Ball extends Sprite {
 
 	/** image displayed for the ball */
-	private final Image BALL_IMAGE = new Image(getClass().getClassLoader().getResourceAsStream("resources/ball.png"));
+	private final Image BALL_IMAGE = new Image(getClass().getClassLoader().getResourceAsStream("ball.png"));
 	/**
 	 * the width of the game's scene, representing the location of the right "wall"
 	 */
@@ -48,7 +47,7 @@ public class Ball extends Sprite {
 		setVelocity(new Point2D(0, 0));
 		setDamageDealt(PropertiesGetter.getBallDamage());
 	}
-	
+
 	public Ball(Image image, int x, int y) {
 		this(x, y);
 		setImage(image);

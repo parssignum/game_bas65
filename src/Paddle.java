@@ -1,12 +1,11 @@
-package actors;
-import game.PropertiesGetter;
+
 import javafx.geometry.Point2D;
 import javafx.scene.image.Image;
 
 public class Paddle extends Character {
 
 	/** the image representing the paddle */
-	private final Image PADDLE_BASE_IMAGE = new Image(getClass().getClassLoader().getResourceAsStream("resources/human.png"));
+	private final Image PADDLE_BASE_IMAGE = new Image(getClass().getClassLoader().getResourceAsStream("images/human.png"));
 	/** default horizontal position */
 	private double defaultX;
 	/** default vertical position */

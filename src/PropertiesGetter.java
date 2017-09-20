@@ -1,4 +1,4 @@
-package game;
+
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -18,7 +18,7 @@ import javafx.scene.paint.Color;
 public final class PropertiesGetter {
 
 	/** name of the file storing the properties for the breakout game variant */
-	private static final String PROPERTIES_FILE = "src/resources/breakout.properties";
+	private static final String PROPERTIES_FILE = "src/breakout.properties";
 
 	/**
 	 * this class uses java.util.Properties as a base and extends its functionality

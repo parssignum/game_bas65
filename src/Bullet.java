@@ -1,5 +1,4 @@
-package actors;
-import game.PropertiesGetter;
+
 import javafx.geometry.Point2D;
 import javafx.scene.image.Image;
 
@@ -10,7 +9,7 @@ public class Bullet extends Sprite {
 	private final int BULLET_SIZE = PropertiesGetter.getBulletSize();
 	/** image displayed for a bullet */
 	private final Image BULLET_IMAGE = new Image(
-			getClass().getClassLoader().getResourceAsStream("resources/bullet.png"));
+			getClass().getClassLoader().getResourceAsStream("images/bullet.png"));
 	/**
 	 * indicates if this bullet was from the boss or the paddle this is necessary
 	 * because the paddle should not take damage from its own bullets

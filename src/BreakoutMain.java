@@ -1,4 +1,4 @@
-package game;
+
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -133,7 +133,7 @@ public class BreakoutMain extends Application {
 	private void displayRules() {
 		String rules = null;
 		try {
-			rules = getFileAsString("resources/game-rules.txt");
+			rules = getFileAsString("game-rules.txt");
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -147,7 +147,7 @@ public class BreakoutMain extends Application {
 	private void displayCheatCodes() {
 		String cheats = null;
 		try {
-			cheats = getFileAsString("resources/cheat-codes.txt");
+			cheats = getFileAsString("cheat-codes.txt");
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -161,7 +161,7 @@ public class BreakoutMain extends Application {
 	private void displayStory() {
 		String story = null;
 		try {
-			story = getFileAsString("resources/story-blurb.txt");
+			story = getFileAsString("story-blurb.txt");
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
