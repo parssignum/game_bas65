@@ -1,6 +1,7 @@
 /actors/
 /game/
 /resources/
+<<<<<<< HEAD
 /Ball.class
 /Bullet.class
 /Character.class
@@ -19,3 +20,5 @@
 /cheat-codes.txt
 /game-rules.txt
 /story-blurb.txt
+=======
+>>>>>>> 8ebb79008a43707eab904cb6da5dd8615c755783
