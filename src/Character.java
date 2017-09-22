@@ -1,4 +1,10 @@
-
+/**
+ * A type of sprite which has health points. Either a playable character or an
+ * enemy that must be destroyed by a playable character.
+ * 
+ * @author Ben Schwennesen
+ *
+ */
 public abstract class Character extends Sprite {
 
 	/**

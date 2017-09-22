@@ -7,3 +7,15 @@
 /human.png
 /ice-background.png
 /rock-background.png
+/BreakoutMain.class
+/Bullet.class
+/Character.class
+/GameEnvironment.class
+/HostileBreakout.class
+/LevelFactory.class
+/MenuItem.class
+/Paddle.class
+/PowerUp.class
+/PropertiesGetter.class
+/Sprite.class
+/SpriteManager.class

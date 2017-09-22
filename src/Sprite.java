@@ -4,7 +4,13 @@ import javafx.geometry.Point2D;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.shape.Rectangle;
-
+/**
+ * An on-screen object capable of moving positions. Represented by an image.
+ * Includes all characters (including the paddle), all balls, and bullets.
+ * 
+ * @author Ben Schwennesen
+ *
+ */
 public abstract class Sprite {
 
 	/** Image representing the sprite */
